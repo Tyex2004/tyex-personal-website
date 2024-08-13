@@ -1,0 +1,125 @@
+.navbar-transparent {
+    background-color: rgba(255, 255, 255, 0.8); /* 白色背景，80% 透明度 */
+}
+
+body {
+    background-image: url('https://s2.loli.net/2024/08/13/Y8snAXKNg4lHDiI.jpg');
+    background-size: cover; /* 使背景图像覆盖整个视口 */
+    background-position: center; /* 将背景图像居中 */
+    background-repeat: no-repeat; /* 防止背景图像重复 */
+    background-attachment: fixed; /* 使背景图像固定，不随滚动条滚动 */
+}
+
+.full-screen {
+    height: 100vh; /* 使第一个 section 满屏 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepagefont {
+    color: #fff; /* 字体颜色 */
+    text-shadow: 2px 2px 2px #000; /* 阴影 */
+    font-weight: 400; /* 加粗 */
+}
+
+.homepagefont2 {
+    color: #fff; /* 字体颜色 */
+    text-shadow: 2px 2px 2px #000; /* 阴影 */
+    font-weight: 400; /* 加粗 */
+}
+
+.scroll-indicator {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000; /* 阴影 */
+    animation: blink 1s infinite;
+    z-index: 1000;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+.rounded-column {
+    border-radius: 10px;
+    background-color: white;
+}
+
+a{
+    color: #651ad5; /* 字体颜色 */
+}
+
+a:hover {
+    color: #8c5cd3; /* 字体颜色 */
+    text-decoration: none; /* 取消下划线 */
+}
+
+.stay-change-color {
+    color: black;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.stay-change-color:hover {
+    background-color: #a983e1;
+    color: white
+}
+
+.footer {
+  background: none repeat scroll 0 0 #2E2E2E;
+  border-top: 5px solid rgb(45, 100, 197);
+  height: 84px;
+  margin-top: 110px;
+}
+#footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+  background: #614092;
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer ul > li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.media>.pull-right{
+    margin-left: 20px;
+  }
+
+/* styles.css */
+#typing-text-container {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#typing-text {
+    display: inline-block;
+}
+
+#cursor {
+    display: inline-block; /* 使光标显示在文字的后面 */
+    vertical-align: middle; /* 使光标垂直居中 */
+    width: 0.15em; /* 调整宽度以匹配文字宽度 */
+    height: 1em; /* 调整高度以匹配文字高度 */
+    background-color: rgb(255, 255, 255); /* 模拟光标 */
+    animation: blink-caret .75s step-end infinite; /* 定义闪烁动画 */
+}
+
+/* 光标闪烁效果 */
+@keyframes blink-caret {
+    from, to { background-color: transparent }
+    50% { background-color: rgb(255, 255, 255) }
+}
