@@ -1,0 +1,62 @@
+using html;
+
+head {
+    meta("UTF-8", "charset");
+    meta("viewport", "width=device-width, initial-scale=1.0");
+    title "Tyex的个人主页";
+    link("styles/bootstrap.css", "stylesheet");
+    link("favicon.ico", "icon", "image/x-icon");
+    link("styles/custom.css", "stylesheet");
+}
+
+body {
+    header {
+        nav ("navbar navbar-expand-lg navbar-dark bg-dark") {
+            div ("container") {
+                a ("navbar-brand", "#") {
+                    img "logo.png";
+                }
+                button ("navbar-toggler") {
+                    span "navbar-toggler-icon";
+                }
+                div ("collapse navbar-collapse") {
+                    ul ("navbar-nav ml-auto") {
+                        li ("nav-item") { a ("nav-link", "#home") { "首页"; } }
+                        li ("nav-item") { a ("nav-link", "#about") { "关于"; } }
+                        li ("nav-item") { a ("nav-link", "#contact") { "联系"; } }
+                    }
+                }
+            }
+        }
+    }
+
+    main ("container mt-5") {
+        section ("jumbotron text-center") {
+            h1 "欢迎来到 Tyex 的个人主页";
+            p "这里是我的个人网站，分享技术、项目和博客。";
+            button ("btn btn-primary") { "了解更多"; }
+        }
+
+        section ("row") {
+            div ("col-md-4") {
+                h2 "项目";
+                p "查看我的开源项目和个人开发成果。";
+                a "btn btn-outline-secondary", "#projects" { "查看项目"; }
+            }
+            div ("col-md-4") {
+                h2 "博客";
+                p "阅读我的技术博客和学习笔记。";
+                a "btn btn-outline-secondary", "#blog" { "阅读博客"; }
+            }
+            div ("col-md-4") {
+                h2 "联系";
+                p "欢迎通过邮件或社交媒体联系我。";
+                a ("btn btn-outline-secondary", "#contact") { "联系我们"; }
+            }
+        }
+    }
+
+    footer ("text-center p-3 bg-dark text-white") {
+        p "© 2025 Tyex. 保留所有权利。";
+    }
+}
